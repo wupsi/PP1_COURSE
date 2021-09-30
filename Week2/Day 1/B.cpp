@@ -8,6 +8,7 @@ int main(){
         while(temp > 0){
             first = temp % 10;
             temp /= 10;
+            cout << first << endl;
         }
         if(first == x) cout << i << " ";
         else if(i % 10 == x) cout << i << " ";
