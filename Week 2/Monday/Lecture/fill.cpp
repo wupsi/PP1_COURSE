@@ -17,7 +17,7 @@ int main(){
     for(int i = 0; i < v.size(); i++)
         cout << v[i] << " ";
 
-    fill(v.begin(), v.end(), gens);
+    fill(v.begin(), v.end(), 5);
 
     cout << "\nVector after fill:\n";
     for(int i = 0; i < v.size(); i++)
