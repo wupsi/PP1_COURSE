@@ -25,6 +25,7 @@ int main(){
     int k; cin >> k;
 
     for(int i = 0; i < size; i++)
+        if()
 
     return 0;
 }
