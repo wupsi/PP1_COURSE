@@ -1,11 +1,35 @@
 #include <iostream>
-#include <map>
+#include <algorithm>
 using namespace std;
 
 int main(){
 
-    string s, alph = "abcdefghijklmnopqrstuvwxyz"; cin >> s;
+    string s; cin >> s;
 
     for(int i = 0; i < s.size(); i++)
-
+        s[i] = 122 - abs(97 - s[i]);
+    cout << s;
 }
+
+// 97 - 122: 25
+// 98 - 121: 23
+// 99 - 120: 21
+// 100 - 119: 19
+// 101 - 118: 17
+// 102 - 117: 15
+// 103 - 116: 13
+// 104 - 115: 11
+// 105 - 114: 9
+// 106 - 113: 7
+// 107 - 112: 5
+// 108 - 111: 3
+// 109 - 110: 1
+
+// f
+// 122 - abs(97 - 102) = 117
+
+// g
+// 122 - abs(97 - 103) = 116
+
+// t
+// 122 - abs(97 - 116) = 103
